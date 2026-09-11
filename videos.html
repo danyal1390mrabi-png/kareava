@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ویدیوهای کار اوا | ویدیو از تمام شغل‌ها</title>
+<meta name="description" content="ویدیوهای نمونه کار های مشاغل ها">
+<meta name="keywords" content="کار اوا, ویدیوهای تبلیغ کسب و کار">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kareava.ir/videos.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="کار اوا">
+<meta property="og:title" content="ویدیوهای کار اوا">
+<meta property="og:description" content="ویدیوهای کار اوا برای تبلیغ کسب‌وکار و جذب مشتری بیشتر.">
+<meta property="og:url" content="https://kareava.ir/videos.html">
+<meta property="og:image" content="https://kareava.ir/logo-social.png">
+<meta property="og:locale" content="fa_IR">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-900:#0B3B3D;
+    --teal-700:#0E4F52;
+    --teal-500:#147A7E;
+    --teal-100:#DCEEEE;
+    --saffron:#E2A33D;
+    --saffron-dark:#C6871F;
+    --paper:#FBF7F1;
+    --paper-2:#F3EDE2;
+    --ink:#1E2623;
+    --muted:#6E7A76;
+    --line:#E4DFD3;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:var(--paper);color:var(--ink);font-family:'Vazirmatn',sans-serif;}
+  body{-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  ::selection{background:var(--saffron);color:var(--teal-900);}
+  a{color:inherit;text-decoration:none;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+  }
+
+  /* ---------- Header ---------- */
+  header.site{position:sticky;top:0;z-index:40;background:var(--teal-900);color:var(--paper);}
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:14px 20px 16px;
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  }
+  .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:20px;letter-spacing:-.2px;white-space:nowrap;}
+  .logo-img{width:28px;height:28px;object-fit:contain;display:inline-block;}
+  .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--saffron);display:inline-block;animation:dotPulse 2.4s ease-in-out infinite;}
+  @keyframes dotPulse{0%,100%{box-shadow:0 0 0 0 rgba(226,163,61,.55);}50%{box-shadow:0 0 0 6px rgba(226,163,61,0);}}
+  .crumb{color:rgba(251,247,241,.6);font-size:14px;font-weight:500;}
+  .back-link{
+    margin-inline-start:auto;display:flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;
+    color:var(--paper);padding:9px 14px;border-radius:9px;background:rgba(255,255,255,.1);transition:.18s;
+  }
+  .back-link:hover{background:rgba(255,255,255,.18);transform:translateY(-1px);}
+  .back-link svg{width:16px;height:16px;stroke:var(--saffron);}
+
+  .tile-divider{
+    height:9px;width:100%;
+    background-image:
+      linear-gradient(45deg, var(--teal-700) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--teal-700) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--teal-700) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--teal-700) 75%);
+    background-size:9px 9px;
+    background-position:0 0,0 4.5px,4.5px -4.5px,-4.5px 0;
+    background-color:var(--saffron);
+    opacity:.9;
+    animation:weave 5s linear infinite;
+  }
+  @keyframes weave{
+    from{background-position:0 0,0 4.5px,4.5px -4.5px,-4.5px 0;}
+    to{background-position:18px 0,18px 4.5px,22.5px -4.5px,13.5px 0;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{max-width:1180px;margin:0 auto;padding:34px 20px 6px;}
+  .hero h1{font-size:24px;font-weight:800;margin-bottom:8px;opacity:0;animation:fadeUp .6s ease .05s forwards;}
+  .hero p{color:var(--muted);font-size:14px;max-width:560px;line-height:1.9;opacity:0;animation:fadeUp .6s ease .16s forwards;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+
+  /* ---------- Category selector (sticky, under hero) ---------- */
+  .cat-picker{position:sticky;top:0;z-index:35;background:var(--paper);border-bottom:1px solid var(--line);}
+  .cat-picker-inner{max-width:1180px;margin:0 auto;padding:10px 20px;}
+  .cat-picker-label{font-size:12px;color:var(--muted);font-weight:600;margin-bottom:8px;}
+  .cat-chip-row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;}
+  .cat-chip-row::-webkit-scrollbar{display:none;}
+  .cat-chip{
+    flex:0 0 auto;white-space:nowrap;padding:9px 16px;border-radius:999px;
+    background:var(--white);border:1px solid var(--line);color:var(--teal-900);
+    font-size:13px;font-weight:600;cursor:pointer;transition:.18s;
+  }
+  .cat-chip:hover{border-color:var(--teal-500);transform:translateY(-1px);}
+  .cat-chip.active{background:var(--teal-900);border-color:var(--teal-900);color:var(--paper);}
+
+  /* ---------- Rails ---------- */
+  main{max-width:1180px;margin:0 auto;padding:10px 0 90px;}
+  .cat-section{scroll-margin-top:104px;padding-top:18px;}
+  .rail-head{display:flex;align-items:baseline;justify-content:space-between;padding:8px 20px 14px;}
+  .rail-head h2{font-size:16px;font-weight:700;}
+  .rail-head span{font-size:12.5px;color:var(--muted);}
+  .rail-wrap{position:relative;}
+  .rail{
+    display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;
+    padding:4px 20px 18px;scrollbar-width:thin;scrollbar-color:var(--saffron) var(--paper-2);
+  }
+  .rail::-webkit-scrollbar{height:8px;}
+  .rail::-webkit-scrollbar-track{background:var(--paper-2);border-radius:8px;}
+  .rail::-webkit-scrollbar-thumb{background:var(--saffron);border-radius:8px;}
+
+  .video-card{
+    flex:0 0 320px;scroll-snap-align:start;
+    background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s;
+    opacity:0;transform:translateY(14px);animation:cardIn .5s ease forwards;
+  }
+  @keyframes cardIn{to{opacity:1;transform:translateY(0);}}
+  .video-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -14px rgba(14,79,82,.32);border-color:var(--teal-500);}
+  .video-frame{width:100%;aspect-ratio:16/9;background:var(--teal-900);position:relative;}
+  .video-frame iframe{width:100%;height:100%;border:0;display:block;}
+
+  /* coming-soon placeholder frame (no real embed) */
+  .video-frame.soon{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+    background:linear-gradient(135deg,var(--teal-900),var(--teal-700));color:var(--paper);
+  }
+  .video-frame.soon .soon-icon{
+    width:46px;height:46px;border-radius:50%;background:rgba(251,247,241,.14);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .video-frame.soon .soon-icon svg{width:20px;height:20px;fill:var(--saffron);}
+  .video-frame.soon .soon-text{font-size:12.5px;font-weight:700;color:var(--paper);opacity:.92;}
+
+  .video-info{padding:14px 15px 16px;display:flex;flex-direction:column;gap:7px;}
+  .video-info h3{font-size:14.5px;font-weight:600;line-height:1.5;}
+  .video-info p{font-size:12.5px;color:var(--muted);line-height:1.8;}
+  .tag{
+    align-self:flex-start;display:inline-flex;align-items:center;gap:4px;margin-top:2px;
+    padding:4px 10px;border-radius:999px;background:var(--teal-100);color:var(--teal-900);
+    font-size:11.5px;font-weight:600;
+  }
+  .tag.soon-tag{background:var(--paper-2);color:var(--saffron-dark);}
+
+  .rail-btn{
+    position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;
+    background:var(--white);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 16px -6px rgba(11,59,61,.3);cursor:pointer;z-index:5;transition:.18s;
+  }
+  .rail-btn:hover{border-color:var(--teal-500);transform:translateY(-50%) scale(1.06);}
+  .rail-btn svg{width:17px;height:17px;stroke:var(--teal-700);}
+  .rail-btn.prev{right:2px;}
+  .rail-btn.next{left:2px;}
+  @media (max-width:760px){ .rail-btn{display:none;} }
+
+  footer{max-width:1180px;margin:0 auto;padding:10px 20px 40px;color:var(--muted);font-size:12.5px;text-align:center;}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="logo-icon-1024.png" alt="کار اوا" class="logo-img">کار اوا</a>
+    <span class="crumb">/ ویدیوها</span>
+    <a class="back-link" style="margin-inline-start:0;background:var(--saffron);color:var(--teal-900);" href="post-ad.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      معرفی رایگان کسب‌وکار
+    </a>
+    <a class="back-link" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      بازگشت به کار اوا
+    </a>
+  </div>
+  <div class="tile-divider"></div>
+</header>
+
+<div class="hero">
+  <h1>🎬 ویدیوهای کار اوا</h1>
+  <p>نمونه کار ویدیویی هر شغل، دسته‌بندی‌شده — برای داشتن اطمینان بیشتر قبل از سفارش</p>
+</div>
+
+<div class="cat-picker">
+  <div class="cat-picker-inner">
+    <div class="cat-picker-label">نوع شغل را انتخاب کنید:</div>
+    <div class="cat-chip-row" id="catChipRow"></div>
+  </div>
+</div>
+
+<main id="mainRails"></main>
+
+<footer>کار اوا — بازارچه معرفی کسب‌وکار، اصناف و صاحبان حرفه در سراسر ایران</footer>
+
+<script>
+/* ===========================================================
+   یک لینک "به‌زودی پخش می‌شود" — اگر ویدیوی معرفی/تیزر مخصوص
+   حالت "به‌زودی" دارید، لینک embed آن را همینجا قرار دهید تا
+   در تمام جاهای خالی (اسلات‌های بدون ویدیوی واقعی) پخش شود.
+   اگر خالی بماند، به‌جای iframe یک کارت گرافیکی "به‌زودی" نشان
+   داده می‌شود.
+=========================================================== */
+const COMING_SOON_EMBED = "https://www.aparat.com/video/video/embed/videohash/mkx1760/vt/frame";
+
+/* هر شغل = یک نوار (rail). هر نوار همیشه ۱۰ اسلات دارد.
+   ویدیوهای واقعی موجود اینجا در دسته مربوط به شغل خودشان
+   قرار گرفته‌اند؛ بقیه اسلات‌ها تا ۱۰ تا، خودکار با
+   "به‌زودی پخش می‌شود" پر می‌شوند. */
+const CATEGORIES = [
+  {
+    id: 'moving',
+    label: 'باربری و اسباب‌کشی',
+    videos: [
+      {title:'ویدیو از کار اسباب‌کشی', desc:'باربری اسباب‌چی، حمل بار، کارگر تخلیه بار — شعبه تهران — 09367642680', embed:'https://www.aparat.com/video/video/embed/videohash/yfk54b1/vt/frame'},
+      {title:'ویدیو از کار اسباب‌کشی', desc:'باربری اسباب‌چی — شعبه مشهد افتتاح شد، ۱۰۰٪ تضمینی VIP — ۰۹۹۱۶۱۴۶۰۷۹', embed:'https://www.aparat.com/video/video/embed/videohash/jpa848q/vt/frame'},
+    ]
+  },
+  {
+    id: 'roadside',
+    label: 'امداد خودرو و یدک‌کش',
+    videos: [
+      {title:'ویدیو از یدک‌کش', desc:'یدک‌کش و امدادخودرو شبانه‌روزی، ۲۴ ساعته در تمام نقاط — ۰۹۱۵۲۰۷۰۷۸۲', embed:'https://www.aparat.com/video/video/embed/videohash/nen4z8e/vt/frame'},
+    ]
+  },
+  {
+    id: 'steel',
+    label: 'نرده و حفاظ استیل',
+    videos: [
+      {title:'ویدیو از تعمیرات نرده', desc:'تعمیرات نرده استیل، حفاظ استیل، حفاظ پنجره، هندریل — 09357144111', embed:'https://www.aparat.com/video/video/embed/videohash/slh028y/vt/frame'},
+    ]
+  },
+  {
+    id: 'construction',
+    label: 'گچ‌کاری و بنایی',
+    videos: [
+      {title:'ویدیویی از نمونه کار', desc:'گچ‌کاری و لکه‌گیری پذیرفته می‌شود — ۰۹۰۳۶۷۳۵۰۴۰', embed:'https://www.aparat.com/video/video/embed/videohash/resp304/vt/frame'},
+    ]
+  },
+  {
+    id: 'furniture',
+    label: 'مبلمان و دکوراسیون',
+    videos: [
+      {title:'ویدیویی از ساخت مبل', desc:'مبلمان قسطی، کلاسیک و مدرن، چستر، اداری و فروشگاهی — 09932058252', embed:'https://www.aparat.com/video/video/embed/videohash/pek324s/vt/frame'},
+    ]
+  },
+  {
+    id: 'appliance',
+    label: 'تعمیرات لوازم خانگی',
+    videos: [
+      {title:'ویدیویی از تعمیرات', desc:'تعمیر تلویزیون پلاسما، LED/LCD با ۳ سال ضمانت، در منزل — ۰۹۱۳۱۵۲۹۳۹۰', embed:'https://www.aparat.com/video/video/embed/videohash/gsl1517/vt/frame'},
+    ]
+  },
+  { id: 'electrician', label: 'برق‌کاری ساختمان', videos: [] },
+  { id: 'plumbing', label: 'لوله‌کشی و تاسیسات', videos: [] },
+  { id: 'painting', label: 'نقاشی ساختمان', videos: [] },
+  { id: 'cabinet', label: 'کابینت‌سازی و آشپزخانه', videos: [] },
+  { id: 'hvac', label: 'کولر، سرمایش و گرمایش', videos: [] },
+  { id: 'glass', label: 'شیشه و آینه', videos: [] },
+  { id: 'wallpaper', label: 'کاغذ دیواری و دکوراسیون داخلی', videos: [] },
+  { id: 'doors', label: 'درب و پنجره UPVC', videos: [] },
+  { id: 'cleaning', label: 'خدمات نظافتی منزل و شرکتی', videos: [] },
+  { id: 'garden', label: 'باغبانی و فضای سبز', videos: [] },
+  { id: 'mobile-repair', label: 'تعمیرات موبایل و لپ‌تاپ', videos: [] },
+  { id: 'tailoring', label: 'خیاطی و پرده‌دوزی', videos: [] },
+  { id: 'photography', label: 'عکاسی و فیلم‌برداری تبلیغاتی', videos: [] },
+  { id: 'computer-network', label: 'کامپیوتر و شبکه', videos: [] },
+  { id: 'light-cargo', label: 'باربری وانت و حمل بار سبک', videos: [] },
+  { id: 'car-repair', label: 'تعمیرات خودرو و برق خودرو', videos: [] },
+  { id: 'flooring', label: 'کف‌سابی و سنگ‌کاری', videos: [] },
+  { id: 'elevator', label: 'آسانسور و بالابر', videos: [] },
+  { id: 'insulation', label: 'ایزوگام و عایق‌کاری پشت‌بام', videos: [] },
+  { id: 'cctv', label: 'دوربین مداربسته و امنیتی', videos: [] },
+];
+
+const SLOTS_PER_RAIL = 10;
+
+function comingSoonFrameHTML(){
+  if (COMING_SOON_EMBED) {
+    return `<iframe src="${COMING_SOON_EMBED}" title="به‌زودی پخش می‌شود" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>`;
+  }
+  return `
+    <div class="soon-icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+    <div class="soon-text">به‌زودی پخش می‌شود</div>
+  `;
+}
+
+function renderCategoryChips(){
+  const row = document.getElementById('catChipRow');
+  row.innerHTML = CATEGORIES.map((c, i) => `
+    <button class="cat-chip${i===0 ? ' active' : ''}" data-target="cat-${c.id}">${c.label}</button>
+  `).join('');
+
+  row.querySelectorAll('.cat-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      row.querySelectorAll('.cat-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const section = document.getElementById(btn.dataset.target);
+      if (section) section.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+}
+
+function renderRails(){
+  const main = document.getElementById('mainRails');
+
+  main.innerHTML = CATEGORIES.map(cat => {
+    const real = cat.videos.map(v => ({...v, placeholder:false}));
+    const soonCount = Math.max(0, SLOTS_PER_RAIL - real.length);
+    const soon = Array.from({length: soonCount}, () => ({
+      title: 'به‌زودی پخش می‌شود',
+      desc: 'ویدیوی این کسب‌وکار به‌زودی اضافه می‌شود.',
+      placeholder: true
+    }));
+    const slots = [...real, ...soon];
+
+    const cards = slots.map((v, i) => `
+      <article class="video-card" style="animation-delay:${Math.min(i*60,420)}ms">
+        <div class="video-frame${v.placeholder ? ' soon' : ''}">
+          ${v.placeholder ? comingSoonFrameHTML() : `<iframe src="${v.embed}" title="${v.title}" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>`}
+        </div>
+        <div class="video-info">
+          <h3>${v.title}</h3>
+          <p>${v.desc}</p>
+          <span class="tag${v.placeholder ? ' soon-tag' : ''}">${v.placeholder ? 'به‌زودی' : cat.label}</span>
+        </div>
+      </article>
+    `).join('');
+
+    return `
+      <section class="cat-section" id="cat-${cat.id}">
+        <div class="rail-head">
+          <h2>${cat.label}</h2>
+          <span>${slots.length.toLocaleString('fa-IR')} ویدیو</span>
+        </div>
+        <div class="rail-wrap">
+          <button class="rail-btn prev" aria-label="قبلی" data-rail="rail-${cat.id}">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <div class="rail" id="rail-${cat.id}">${cards}</div>
+          <button class="rail-btn next" aria-label="بعدی" data-rail="rail-${cat.id}">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+        </div>
+      </section>
+    `;
+  }).join('');
+
+  main.querySelectorAll('.rail-btn.prev').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById(btn.dataset.rail).scrollBy({left: 340, behavior:'smooth'});
+    });
+  });
+  main.querySelectorAll('.rail-btn.next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById(btn.dataset.rail).scrollBy({left: -340, behavior:'smooth'});
+    });
+  });
+}
+
+function buildJsonLd(){
+  const items = [];
+  let pos = 1;
+  CATEGORIES.forEach(cat => {
+    cat.videos.forEach(v => {
+      items.push({
+        "@type": "ListItem",
+        "position": pos++,
+        "item": {
+          "@type": "VideoObject",
+          "name": v.title,
+          "description": v.desc,
+          "uploadDate": "2026-01-15"
+        }
+      });
+    });
+  });
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "ویدیوهای تبلیغ کسب‌وکار کار اوا",
+    "itemListElement": items
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(ld);
+  document.head.appendChild(script);
+}
+
+renderCategoryChips();
+renderRails();
+buildJsonLd();
+</script>
+</body>
+</html>

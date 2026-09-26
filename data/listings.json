@@ -787,5 +787,16 @@
     "createdAt": 1788718370826,
     "slug": "کافی-نت-E10-یزد",
     "vip": true
+  },
+  {
+    "id": "s1790422632264",
+    "title": "نرده و پله مرادی",
+    "price": 0,
+    "category": "construction",
+    "city": "یزد",
+    "img": "ad-1790422630339-cd9qt.jpg",
+    "phone": "09101510888",
+    "desc": "",
+    "createdAt": 1790422632264
   }
 ]
